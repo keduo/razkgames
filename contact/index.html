@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Contact — raZk Games</title>
+<meta name="description" content="Get in touch with raZk Games — general questions, press, or privacy requests.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Baloo+2:wght@600;700;800&family=Nunito:wght@400;600;700;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="../assets/style.css">
+</head>
+<body>
+<div class="page-bg">
+  <div class="blob-a"></div>
+  <div class="blob-b"></div>
+
+  <div class="wrap">
+    <header class="site-header">
+      <div class="brand">
+        <div class="brand-badge"><img src="../assets/razk-logo.png" alt="raZk Games"></div>
+        <div class="brand-tag">A GAME STUDIO</div>
+      </div>
+      <nav class="site-nav">
+        <a class="nav-link" href="/">HOME</a>
+        <a class="nav-link active" href="/contact/">CONTACT<div class="nav-underline"></div></a>
+        <a class="nav-link" href="/support/">SUPPORT</a>
+        <a class="nav-link" href="/privacypolicy/">PRIVACY</a>
+      </nav>
+    </header>
+
+    <div style="padding:48px 0 20px;max-width:940px">
+      <h1 style="font-size:54px;margin:0 0 12px;font-weight:800">Contact</h1>
+      <p style="font-size:20px;color:#CDBEEC;margin:0 0 40px;max-width:560px">We read everything. A real human replies, usually within two business days.</p>
+
+      <div style="display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:18px;margin-bottom:44px">
+        <div class="card">
+          <div style="font-size:12px;letter-spacing:2.5px;color:#FFD52E;font-weight:800;margin-bottom:10px">GENERAL</div>
+          <div style="font-size:18px;margin-bottom:6px"><a href="mailto:hello@razkgames.com">hello@razkgames.com</a></div>
+          <div style="font-size:15px;color:#A98FE0">Questions, ideas, hello.</div>
+        </div>
+        <div class="card">
+          <div style="font-size:12px;letter-spacing:2.5px;color:#FFD52E;font-weight:800;margin-bottom:10px">PRESS &amp; CREATORS</div>
+          <div style="font-size:18px;margin-bottom:6px"><a href="mailto:press@razkgames.com">press@razkgames.com</a></div>
+          <div style="font-size:15px;color:#A98FE0">Press kit, keys, footage.</div>
+        </div>
+        <div class="card">
+          <div style="font-size:12px;letter-spacing:2.5px;color:#FFD52E;font-weight:800;margin-bottom:10px">PRIVACY</div>
+          <div style="font-size:18px;margin-bottom:6px"><a href="mailto:privacy@razkgames.com">privacy@razkgames.com</a></div>
+          <div style="font-size:15px;color:#A98FE0">Data requests and deletion.</div>
+        </div>
+      </div>
+
+      <div class="card" style="max-width:620px;border-radius:24px;padding:32px">
+        <h2 style="font-size:28px;margin:0 0 22px;font-weight:800">Send us a message</h2>
+        <div id="contact-sent" style="display:none;background:rgba(43,217,124,0.14);border:1px solid rgba(43,217,124,0.4);border-radius:16px;padding:22px;font-size:18px;color:#BFF4D7">Thanks — your message is on its way. We'll reply to the address you gave us.</div>
+        <form id="contact-form" style="display:grid;gap:16px" onsubmit="event.preventDefault();document.getElementById('contact-form').style.display='none';document.getElementById('contact-sent').style.display='block';">
+          <div style="display:grid;gap:8px">
+            <label for="c-name" class="field-label">YOUR NAME</label>
+            <input id="c-name" name="name" type="text" placeholder="Alex Rivera" class="field" required>
+          </div>
+          <div style="display:grid;gap:8px">
+            <label for="c-email" class="field-label">EMAIL</label>
+            <input id="c-email" name="email" type="email" placeholder="you@example.com" class="field" required>
+          </div>
+          <div style="display:grid;gap:8px">
+            <label for="c-msg" class="field-label">MESSAGE</label>
+            <textarea id="c-msg" name="message" rows="5" placeholder="What's on your mind?" class="field" style="resize:vertical" required></textarea>
+          </div>
+          <button type="submit" class="btn-send">Send message</button>
+        </form>
+      </div>
+    </div>
+
+    <footer class="site-footer">
+      <img src="../assets/razk-logo.png" alt="raZk Games">
+      <div class="footer-links">
+        <a href="/privacypolicy/">Privacy Policy</a>
+        <a href="/support/">Support</a>
+        <a href="/contact/">Contact</a>
+      </div>
+      <div class="footer-copy">&copy; 2026 raZk Games.<br>All rights reserved.</div>
+    </footer>
+  </div>
+</div>
+</body>
+</html>

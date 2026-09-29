@@ -1,0 +1,58 @@
+html, body { margin: 0; padding: 0; background: #1E0742; }
+* { box-sizing: border-box; }
+body { font-family: 'Nunito', system-ui, sans-serif; color: #ffffff; }
+a { color: #FFD52E; text-decoration: none; }
+a:hover { color: #ffffff; }
+input, textarea, button { font-family: inherit; }
+input::placeholder, textarea::placeholder { color: #8C79B8; }
+h1, h2 { font-family: 'Baloo 2', cursive; }
+
+.page-bg {
+  min-height: 100vh;
+  background: radial-gradient(120% 80% at 80% 0%, #4A12A8 0%, #2B0A5E 45%, #1E0742 100%);
+  overflow: hidden;
+  position: relative;
+}
+.blob-a { position: absolute; top: -120px; right: -80px; width: 420px; height: 420px; border-radius: 50%; background: radial-gradient(circle at 35% 30%, #7A2BE0, #3B0C86); opacity: 0.55; }
+.blob-b { position: absolute; top: 640px; left: -140px; width: 300px; height: 300px; border-radius: 50%; background: radial-gradient(circle at 40% 30%, #6A21D6, #2E0A6B); opacity: 0.5; }
+
+.wrap { position: relative; max-width: 1180px; margin: 0 auto; padding: 0 28px; }
+
+header.site-header { display: flex; align-items: center; gap: 28px; padding: 26px 0 8px; flex-wrap: wrap; }
+.brand { display: flex; align-items: center; gap: 18px; flex: 0 0 auto; }
+.brand-badge { width: 78px; height: 78px; border-radius: 50%; background: #0B0318; display: flex; align-items: center; justify-content: center; box-shadow: 0 0 0 2px rgba(255,255,255,0.08); }
+.brand-badge img { width: 46px; height: auto; display: block; }
+.brand-tag { font-size: 12px; letter-spacing: 4px; color: #C9B8EA; font-weight: 700; }
+
+nav.site-nav { margin-left: auto; display: flex; gap: 6px; flex-wrap: wrap; }
+.nav-link { background: none; border: 0; cursor: pointer; color: #E7DCFF; font-size: 13px; font-weight: 800; letter-spacing: 2.5px; padding: 10px 14px; border-radius: 10px; display: inline-block; }
+.nav-link:hover { background: rgba(255,255,255,0.07); color: #ffffff; }
+.nav-link.active { color: #ffffff; }
+.nav-underline { height: 3px; border-radius: 3px; background: #FFD52E; margin-top: 6px; }
+
+.btn-primary { display: block; width: 100%; max-width: 420px; background: #FFD52E; color: #2B0A5E; border: 0; border-radius: 999px; padding: 22px 32px; font-size: 26px; font-weight: 800; letter-spacing: 1px; cursor: pointer; box-shadow: 0 14px 34px rgba(255,213,46,0.32); text-align: center; }
+.btn-primary:hover { background: #FFE066; }
+
+.btn-send { background: #FFD52E; color: #2B0A5E; border: 0; border-radius: 999px; padding: 16px 28px; font-size: 19px; font-weight: 800; cursor: pointer; justify-self: start; }
+.btn-send:hover { background: #FFE066; }
+
+.field { background: rgba(255,255,255,0.06); border: 1px solid rgba(255,255,255,0.18); border-radius: 12px; padding: 14px 16px; font-size: 17px; color: #ffffff; outline: none; width: 100%; }
+.field:focus { border-color: #FFD52E; }
+.field-label { font-size: 13px; letter-spacing: 2px; font-weight: 800; color: #A98FE0; }
+
+.card { background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.12); border-radius: 20px; padding: 24px; }
+
+details.faq { background: rgba(0,0,0,0.25); border: 1px solid rgba(255,255,255,0.12); border-radius: 18px; overflow: hidden; margin-bottom: 12px; }
+details.faq summary { cursor: pointer; padding: 22px 24px; font-size: 19px; font-weight: 700; list-style: none; display: flex; justify-content: space-between; align-items: center; gap: 18px; }
+details.faq summary:hover { background: rgba(255,255,255,0.05); }
+details.faq summary::-webkit-details-marker { display: none; }
+details.faq summary::after { content: '+'; color: #FFD52E; font-size: 24px; line-height: 1; flex: 0 0 auto; }
+details.faq[open] summary::after { content: '\2013'; }
+details.faq .faq-a { padding: 0 24px 24px; font-size: 17px; line-height: 1.6; color: #CDBEEC; max-width: 640px; }
+
+footer.site-footer { margin-top: 80px; border-top: 1px solid rgba(255,255,255,0.14); padding: 30px 0 44px; display: flex; align-items: center; gap: 28px; flex-wrap: wrap; }
+footer.site-footer img { width: 40px; height: auto; display: block; }
+.footer-links { display: flex; gap: 22px; flex-wrap: wrap; }
+.footer-links a { color: #CDBEEC; font-size: 15px; }
+.footer-links a:hover { color: #ffffff; }
+.footer-copy { margin-left: auto; text-align: right; font-size: 14px; color: #A98FE0; line-height: 1.5; }
